@@ -52,7 +52,7 @@ function buildComicArray(comicFolderPath) {
                 };
             }
             // Add the file path to the pages array of the corresponding chapter
-            chapters[chapterName].pages.push(path.join(comicFolderPath, file));
+            chapters[chapterName].pages.push(`/Images/Comic/${file}`); // Assuming 'Images/Comic' is the path accessible from the web server
         }
     });
 
