@@ -10,7 +10,7 @@ function getPageURL()
 
 function updateURL()
 {
-    const newURL = '${window.location.pathname}?page=${currentIndex}';
+    const newURL = `${window.location.pathname}?page=${currentIndex}`;
     window.history.replaceState(null, "", newURL);
 }
 
