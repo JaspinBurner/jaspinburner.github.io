@@ -1,40 +1,39 @@
 <html>
 
+<link rel="stylesheet" href="reader-style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script src="displayimage.js"></script>
 
-<body class="body">
+<body>
 
-    <link rel="stylesheet" href="style.css">
-    <div class="navbarcontainer">
-        <div class="navbar">
-
+        <section class="navbar">
             <a class="button" href="index.html">
                 COMICS
             </a>
-            <div class="button">
+            <a class="button" href="contact.html">
                 CONTACT
-            </div>
+            </a>
+        </section>
 
-        </div>
-    </div>
+        <section class="comic-viewport">
 
-    <div class="page">
+            <img src="comics/magicstar/comiclogo.png" class="comic-page" id="comicPage">
 
-        <div class="comic-container">
+            <section class="nav-button-container">
 
-            <img class="comic-page" id="comicPage" src="comics/magicstar/comiclogo.png">
+                <div class="button" id="lastButton">
+                    <img src="icons/goback.png" width="80%">
+                </div>
 
-            <div class="button-container">
+                <div class="button" id="nextButton">
+                    <img src="icons/goforward.png" width="80%">
+                </div>
 
-                <div class="button" onclick="lastPage()" id="lastButton"><img src="icons/goback.png" width="42px"></div>
-                <div class="button" onclick="nextPage()" id="nextButton"><img src="icons/goforward.png" width="42px"></div>
-                
-            </div>
+            </section>
+
             
-        </div>
-        
 
-    </div>
-
+        </section>
 </body>
+
 </html>
