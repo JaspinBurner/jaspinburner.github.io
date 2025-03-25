@@ -1,4 +1,4 @@
-const images = ["comics/magicstar/comiclogo.png", "comics/magicstar/page1.png"];
+const images = ["comics/magicstar/comiclogo.png", "comics/magicstar/page1.png", "comics/magicstar/page2.png"];
 let currentIndex = 0;
 
 function getPageURL() {
