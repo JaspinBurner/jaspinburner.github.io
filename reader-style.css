@@ -1,0 +1,108 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    color: white;
+    background-color: rgb(39, 57, 73);
+    user-select: none;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.navbar
+{
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    height: 4vh;
+    padding: 5px;
+    background-color: rgb(28, 33, 44);
+}
+
+.nav-button-container
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.button
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45px;
+    width: 100px;
+    border-radius: 3px;
+    background-color: rgb(112, 135, 165);
+    transition-duration: 45ms;
+    margin: 5px;
+    cursor: pointer;
+}
+.button:hover
+{
+    scale: 110%;
+}
+.button:active
+{
+    scale: 100%;
+}
+
+.comic-viewport
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.comic-page
+{
+    width: 80vh;
+    border-radius: 3px;
+    transition-duration: 42ms;
+    margin-top: 10px;
+    z-index: -1;
+}
+
+@media screen and (max-width: 60rem)
+{
+
+    .comic-page
+    {
+        width: 500px;
+    }
+
+    .navbar
+    {
+        height: 8vh;
+    }
+
+    .button
+    {
+        height: 60px;
+    }
+
+}
+
+@media screen and (max-height: 30rem)
+{
+
+    .comic-page
+    {
+        width: 500px;
+        border-radius: 10px;
+        z-index: -1;
+    }
+
+    .navbar
+    {
+        display: none;
+    }
+
+    .button
+    {
+        height: 60px;
+    }
+
+}
