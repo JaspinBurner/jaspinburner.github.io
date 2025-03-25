@@ -1,0 +1,139 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    color: white;
+    background-color: rgb(39, 57, 73);
+    user-select: none;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.navbar
+{
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    height: 4vh;
+    padding: 5px;
+    background-color: rgb(28, 33, 44);
+}
+
+.button
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45px;
+    width: 100px;
+    border-radius: 3px;
+    background-color: rgb(112, 135, 165);
+    transition-duration: 45ms;
+    margin: 5px;
+    cursor: pointer;
+}
+.button:hover
+{
+    scale: 110%;
+}
+.button:active
+{
+    scale: 100%;
+    background-color: rgb(174, 198, 230);
+}
+
+.comic-list
+{
+    width: 100vw;
+    height: 100vh;
+}
+
+.comic-button
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    padding: 5px;
+    width: 240px;
+    height: 370px;
+    border-radius: 3px;
+    border: solid;
+    border-width: 2px;
+    border-color: black;
+    background-color: rgb(112, 135, 165);
+    cursor: pointer;
+    transition-duration: 45ms;
+
+}
+.comic-button:hover
+{
+    scale: 105%;
+    border-color: rgb(174, 198, 230);
+    border-width: 5px;
+}
+.comic-button:active
+{
+    scale: 100%;
+    background-color: rgb(174, 198, 230);
+    border-color: black;
+}
+
+.comic-cover
+{
+    display: flex;
+    width: 200px;
+    height: 300px;
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+
+.comic-list
+{
+    display: flex;
+    flex-direction: row;
+    width: 100vh;
+    float: left;
+}
+
+@media screen and (max-width: 60rem)
+{
+
+    .comic-page
+    {
+        width: 500px;
+    }
+
+    .navbar
+    {
+        height: 8vh;
+    }
+
+    .button
+    {
+        height: 60px;
+    }
+
+}
+
+@media screen and (max-height: 30rem)
+{
+
+    .comic-page
+    {
+        width: 500px;
+        border-radius: 10px;
+        z-index: -1;
+    }
+
+    .navbar
+    {
+        display: none;
+    }
+
+    .button
+    {
+        height: 60px;
+    }
+
+}
