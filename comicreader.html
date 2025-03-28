@@ -2,12 +2,13 @@
 
 <link rel="stylesheet" href="reader-style.css">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<script src="displayimage.js"></script>
 
 <body>
 
+    <script src="script.js"></script>
+
         <section class="navbar">
-            <a class="button" href="index.html">
+            <a class="button" href="index.html" >
                 COMICS
             </a>
             <a class="button" href="contact.html">
@@ -17,16 +18,20 @@
 
         <section class="comic-viewport">
 
-            <img src="comics/magicstar/comiclogo.png" class="comic-page" id="comicPage">
+            <img class="comic-page" id="comicPage">
 
             <section class="nav-button-container">
 
-                <div class="button" id="lastButton">
+                <div id="lastButton" class="button" onclick="lastPage()">
+
                     <img src="icons/goback.png" width="80%">
+
                 </div>
 
-                <div class="button" id="nextButton">
+                <div id="nextButton" class="button" onclick="nextPage()">
+
                     <img src="icons/goforward.png" width="80%">
+
                 </div>
 
             </section>
