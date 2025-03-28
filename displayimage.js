@@ -1,4 +1,9 @@
-const images = ["comics/magicstar/comiclogo.png", "comics/magicstar/page1.png", "comics/magicstar/page2.png", "comics/magicstar/page3.png"];
+const images = [
+    "comics/magicstar/comiclogo.png",
+    "comics/magicstar/page1.png",
+    "comics/magicstar/page2.png",
+    "comics/magicstar/page3.png"
+];
 let currentIndex = 0;
 
 function getPageURL() {
@@ -45,7 +50,3 @@ window.onload = function () {
     currentIndex = getPageURL();
     updateImage();
 };
-
-// Attach event listeners (ensure buttons exist in HTML)
-document.getElementById("nextButton").addEventListener("click", nextPage);
-document.getElementById("lastButton").addEventListener("click", lastPage);
